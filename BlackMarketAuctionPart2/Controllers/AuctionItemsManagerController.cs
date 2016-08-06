@@ -11,6 +11,7 @@ using BlackMarketAuctionPart2.Models;
 
 namespace BlackMarketAuctionPart2.Controllers
 {
+    [Authorize(Users ="admin@example.com")]
     public class AuctionItemsManagerController : Controller
     {
         private AuctionContext db = new AuctionContext();

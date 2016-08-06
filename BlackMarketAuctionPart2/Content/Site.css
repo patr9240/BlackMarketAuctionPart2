@@ -1,4 +1,11 @@
-﻿html{
+﻿/*
+     Site.css
+     Austin Cameron - Patrick Ross - Ryan Jameson
+     Black Market Auction House
+     This is the custom css page
+
+*/
+html{
     position: absolute;
   min-height: 100%;
   background-color: burlywood;
