@@ -1,0 +1,74 @@
+﻿@using BlackMarketAuctionPart2.Models
+@model Category
+
+    <!--
+         Browse.cshtml
+         Austin Cameron - Patrick Ross - Ryan Jameson
+         Black Market Auction House
+         This is the browse view for the auction list
+    -->
+
+@helper Truncate(string input, int length)
+{
+if (input.Length <= length)
+{
+        @input
+}
+else
+{
+        @input.Substring(0, length)<text>...</text>
+}
+}
+
+@{
+    ViewBag.Title = "Browse";
+}
+
+<h2>Browsing Category: @Model.Name</h2>
+
+<table class="table table-condensed table-bordered">
+    <tr>
+        <th>
+            Item
+        </th>
+        <th>
+            Price
+        </th>
+        <th>
+            Description
+        </th>
+        <th>
+            Category
+        </th>
+        <th>
+            Image
+        </th>
+    </tr>
+
+    @foreach (Item item in Model.items)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            <td>
+                @Truncate(item.Description, 30)
+            </td>
+            <td>
+                $@Html.DisplayFor(modelItem => item.Category.Name)
+            </td>
+            <td>
+                <img src="@item.ItemImage" alt="@item.Name" />
+            </td>
+            <td>
+                <a href="@Url.Action("Details", new { id = item.ItemID })" class="btn btn-primary" title="Info"><i class="fa fa-info"></i></a>
+            </td>
+        </tr>
+    }
+
+</table>
+
+<a href="@Url.Action("Index")" class="btn btn-primary" title="Back"><i class="fa fa-chevron-left"> Back</i></a>

@@ -1,0 +1,25 @@
+﻿@using BlackMarketAuctionPart2.Models
+@model IEnumerable<Category>
+
+    <!--
+         Index.cshtml
+         Austin Cameron - Patrick Ross - Ryan Jameson
+         Black Market Auction House
+         This is the index view for the auction list
+    -->
+
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Browse Categories</h2>
+<p>
+    Select from one of the @Model.Count() categories:
+</p>
+<ul>
+    @foreach (Category item in Model)
+    {
+        <li>@Html.ActionLink(item.Name, "Browse", new { categories = item.Name })</li>
+    }
+</ul>
