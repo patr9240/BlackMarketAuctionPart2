@@ -13,18 +13,16 @@
 @{
     ViewBag.Title = "Details";
 }
-
-<h2>Item: @Model.Name</h2>
-
-<hr />
-<ul>
-    <li>Item: @Model.Name</li>
-    <li>Price: @Model.Price</li>
-    <li>Description: @Model.Description</li>
-    <li>Category: $@Model.Category.Name</li>
-    <li>
-        Image: <br />
-        <img src="@Model.ItemImage" alt="@Model.Name" />
-    </li>
-</ul>
-<a href="@Url.Action("Browse", new { Category = Model.Category.Name })" class="btn btn-primary" title="Back"><i class="fa fa-chevron-left"> Back</i></a>
+<br />
+<br />
+<h1>Item: @Model.Name</h1>
+<h3>Category: @Model.Category.Name</h3>
+<div class="container text-center">
+    <img src="@Model.ItemImage" alt="@Model.Name" />
+    <h3>@Model.Description</h3>
+    <h3>$@Model.Price</h3> 
+</div>
+<div class="text-center">
+    <a href="@Url.Action("Browse", new { Category = Model.Category.Name })" class="btn btn-primary" title="Back"><i class="fa fa-chevron-left"> Back</i></a>
+    <a href="" class="btn btn-primary" title="Purchase"><i class="fa fa-shopping-cart"> Add to Cart</i></a>
+</div>
