@@ -19,16 +19,17 @@
 </p>
     @foreach (Category item in Model)
     {
-        <div class="row">
-            <div class="col-sm-6 col-md-4">
-                <div class="thumbnail">
-                    <img src="@item.ThumbnailImage" alt="@item.Name" width="256" height="256">
-                    <div class="caption">
-                        <h3>@item.Name</h3>
-                        <p>@item.Description</p>
-                        <p class="text-center"><a href="@Url.Action("Browse", new { categories = item.Name })" class="btn btn-primary" title="View Category">View</a></p>
+        <div class="thumb1">
+      
+                <div class="col-sm-3 col-md-3">
+                    <div class="thumbnail">
+                        <img src="@item.ThumbnailImage" alt="@item.Name" width="256" height="256">
+                        <div class="caption">
+                            <h3>@item.Name</h3>
+                            <p>@item.Description</p>
+                            <p class="text-center"><a href="@Url.Action("Browse", new { categories = item.Name })" class="btn btn-primary" title="View Category">View</a></p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
     }
