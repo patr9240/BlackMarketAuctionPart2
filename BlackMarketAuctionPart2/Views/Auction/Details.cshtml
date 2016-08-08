@@ -15,14 +15,20 @@
 }
 <br />
 <br />
-<h1>Item: @Model.Name</h1>
-<h3>Category: @Model.Category.Name</h3>
-<div class="container text-center">
-    <img src="@Model.ItemImage" alt="@Model.Name" />
-    <h3>@Model.Description</h3>
-    <h3>$@Model.Price</h3> 
+<div class="itemcat1">
+    <h1>Item: @Model.Name</h1>
+    <h3>Category: @Model.Category.Name</h3>
 </div>
-<div class="text-center">
-    <a href="@Url.Action("Browse", new { categories = Model.Category.Name })" class="btn btn-primary" title="Back"><i class="fa fa-chevron-left"> Back</i></a>
-    <a href="" class="btn btn-primary" title="Purchase"><i class="fa fa-shopping-cart"> Add to Cart</i></a>
+<div class="thumb2">
+    <div class="col-sm-3 col-md-6">
+        <div class="thumbnail text-center">
+            <img src="@Model.ItemImage" alt="@Model.Name" />
+            <h3>@Model.Description</h3>
+            <h3>$@Model.Price</h3>
+            <a href="" class="btn btn-primary" title="Purchase"><i class="fa fa-shopping-cart"> Add to Cart</i></a><a href="@Url.Action("Browse", new { categories = Model.Category.Name })" class="btn btn-primary" title="Back"><i class="fa fa-chevron-left"> Back</i></a>
+        </div>
+    </div>
 </div>
+    <div class="text-center">
+       
+    </div>

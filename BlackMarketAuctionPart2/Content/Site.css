@@ -18,7 +18,7 @@ body {
 	color: #333;
 	width: 1000px;
 	background-image:  url('../Assets/Images/Scroll.jpg');
-    background-size: 200%;
+    background-size: 100%;
 	margin: 50px 40px 0px 160px;
     height: 1000px;
 }
@@ -56,4 +56,13 @@ textarea {
 }
 .thumb1{
     padding-right: 10em;
+}
+.thumb2{
+    position: relative;
+    padding-left: 20em;
+    padding-top: 5em;
+    
+}
+.itemcat1{
+    padding-left: 25em;
 }
