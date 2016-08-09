@@ -35,6 +35,7 @@ namespace BlackMarketAuctionPart2.Models
         public virtual string Name { get; set; }
         public virtual decimal Price { get; set; }
         public virtual string Description { get; set; }
+        public virtual string ItemLink { get; set; }
         public virtual string ItemImage { get; set; }
         public virtual Category Category { get; set; }
     }
