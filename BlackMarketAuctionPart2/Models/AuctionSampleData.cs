@@ -21,13 +21,13 @@ namespace BlackMarketAuctionPart2.Models
         {
             var Categories = new List<Category>
             {
-                new Category { Name = "Mounts", Description = "The rarest of rideable companions.", ThumbnailImage = "/Assets/Images/Auction/Placeholder.gif" },
-                new Category { Name = "Pets", Description = "A campanion to follow you around.", ThumbnailImage = "/Assets/Images/Auction/Placeholder.gif" },
-                new Category { Name = "Armour", Description = "Splendid armour for any occasion.", ThumbnailImage = "/Assets/Images/Auction/Placeholder.gif" },
-                new Category { Name = "Weapons", Description = "Powerful objects to bring your foes demise.", ThumbnailImage = "/Assets/Images/Auction/Placeholder.gif" },
-                new Category { Name = "Toys", Description = "Great items to grant amusement.", ThumbnailImage = "/Assets/Images/Auction/Placeholder.gif" },
-                new Category { Name = "Tabards", Description = "Spice up your fashion statement.", ThumbnailImage = "/Assets/Images/Auction/Placeholder.gif" },
-                new Category { Name = "Mystery", Description = "We cannot gaurantee what lies within...", ThumbnailImage = "/Assets/Images/Auction/Placeholder.gif" },
+                new Category { Name = "Mounts", Description = "The rarest of rideable companions.", ThumbnailImage = "/Assets/Images/Auction/Categories/Mounts.jpg" },
+                new Category { Name = "Pets", Description = "A campanion to follow you around.", ThumbnailImage = "/Assets/Images/Auction/Categories/Pets.jpg" },
+                new Category { Name = "Armour", Description = "Splendid armour for any occasion.", ThumbnailImage = "/Assets/Images/Auction/Categories/Armours.jpg" },
+                new Category { Name = "Weapons", Description = "Powerful objects to bring your foes demise.", ThumbnailImage = "/Assets/Images/Auction/Categories/Weapons.jpg" },
+                new Category { Name = "Toys", Description = "Great items to grant amusement.", ThumbnailImage = "/Assets/Images/Auction/Categories/Toys.jpg" },
+                new Category { Name = "Tabards", Description = "Spice up your fashion statement.", ThumbnailImage = "/Assets/Images/Auction/Categories/Tabards.jpg" },
+                new Category { Name = "Mystery", Description = "We cannot gaurantee what lies within...", ThumbnailImage = "/Assets/Images/Auction/Categories/Mysterious.jpg" },
             };
 
             new List<Item>

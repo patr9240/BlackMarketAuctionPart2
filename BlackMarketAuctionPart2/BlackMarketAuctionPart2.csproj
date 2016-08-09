@@ -189,6 +189,14 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\Images\Auction\Categories\Armours.jpg" />
+    <Content Include="Assets\Images\Auction\Categories\Mounts.jpg" />
+    <Content Include="Assets\Images\Auction\Categories\Mysterious.jpg" />
+    <Content Include="Assets\Images\Auction\Categories\Pets.jpg" />
+    <Content Include="Assets\Images\Auction\Categories\Placeholder.gif" />
+    <Content Include="Assets\Images\Auction\Categories\Tabards.jpg" />
+    <Content Include="Assets\Images\Auction\Categories\Toys.jpg" />
+    <Content Include="Assets\Images\Auction\Categories\Weapons.jpg" />
     <Content Include="Assets\Images\Auction\Placeholder.gif" />
     <Content Include="Assets\Images\build-3.png" />
     <Content Include="Assets\Images\Carousel\Armour-750-350.jpg" />
