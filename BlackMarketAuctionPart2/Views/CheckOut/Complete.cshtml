@@ -1,0 +1,18 @@
+﻿@model int
+<!--
+     Complete.cshtml
+     Austin Cameron - Patrick Ross - Ryan Jameson
+     Black Market Auction House
+     This is the payment completion page letting the shopper know the transaction was successful.
+-->
+
+@{
+    ViewBag.Title = "Checkout Complete";
+}
+<h2>Checkout Complete</h2>
+<p>Thank you for shopping at Black Market Auction House! Your order number is: @Model</p>
+<p>
+    How about shopping for more of our rare goods?
+    <br/>
+    @Html.ActionLink("Click here to return to the store.","Index", "Home")
+</p>

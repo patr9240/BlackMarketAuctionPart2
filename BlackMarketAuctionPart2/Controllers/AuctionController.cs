@@ -14,7 +14,6 @@ using BlackMarketAuctionPart2.Models;
      Austin Cameron - Patrick Ross - Ryan Jameson
      Black Market Auction House
      This is the auction list controller
-
 */
 
 namespace BlackMarketAuctionPart2.Controllers

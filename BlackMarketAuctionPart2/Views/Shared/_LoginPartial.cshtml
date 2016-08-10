@@ -20,6 +20,7 @@
                     @Html.ActionLink("Manage Store", "Index", "AuctionItemsManager", routeValues: null, htmlAttributes: new { title = "Manage Store" })
                 </li>
             }
+            <li>@{Html.RenderAction("CartSummary", "ShoppingCart");}</li>
             <li>
                 @Html.ActionLink("Hello " + User.Identity.GetUserName() + "!", "ChangePassword", "Manage", routeValues: null, htmlAttributes: new { title = "Manage Account" })
             </li>

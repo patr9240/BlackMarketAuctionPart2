@@ -175,6 +175,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AuctionController.cs" />
     <Compile Include="Controllers\AuctionItemsManagerController.cs" />
+    <Compile Include="Controllers\CheckoutController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\ShoppingCartController.cs" />
@@ -304,6 +305,9 @@
     <Content Include="Views\AuctionItemsManager\Index.cshtml" />
     <Content Include="Views\ShoppingCart\Index.cshtml" />
     <Content Include="tsconfig.json" />
+    <Content Include="Views\CheckOut\AddressAndPayment.cshtml" />
+    <Content Include="Views\CheckOut\Complete.cshtml" />
+    <Content Include="Views\ShoppingCart\CartSummary.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

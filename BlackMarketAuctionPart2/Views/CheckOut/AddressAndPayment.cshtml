@@ -1,0 +1,33 @@
+﻿@model BlackMarketAuctionPart2.Models.Order
+
+<!--
+     AddressAndPayment.cshtml
+     Austin Cameron - Patrick Ross - Ryan Jameson
+     Black Market Auction House
+     This is the address and payment page for the shopping cart in the Black Market Auction House
+-->
+
+@using (Html.BeginForm())
+{
+
+    <h2>Address And Payment</h2>
+    <fieldset>
+        <legend>Shipping Information</legend>
+        @Html.EditorForModel()
+    </fieldset>
+    <fieldset>
+        <legend>Payment</legend>
+        <p>
+            We're running a promotion: all items in the store are free
+            with the promo code: "LEGION"!
+        </p>
+        <div class="editor-label">
+            @Html.Label("Promo Code")
+        </div>
+        <div class="editor-field">
+            @Html.TextBox("PromoCode")
+        </div>
+    </fieldset>
+
+    <input type="submit" value="Submit Order" />
+}
