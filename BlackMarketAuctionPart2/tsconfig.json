@@ -1,0 +1,15 @@
+﻿/*
+     tsconfig.css
+     Austin Cameron - Patrick Ross - Ryan Jameson
+     Black Market Auction House
+     This is a custom typescript configuration page
+
+*/ 
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "sourceMap": true
+  },
+  "compileOnSave": true
+}

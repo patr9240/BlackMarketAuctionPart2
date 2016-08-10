@@ -29,7 +29,7 @@ namespace BlackMarketAuctionPart2.Controllers
             // Set up our ViewModel
             var viewModel = new ShoppingCartViewModel
             {
-                OrderItems = cart.GetCartItems(),
+                OrderItemList = cart.GetCartItems(),
                 CartTotal = cart.GetTotal()
             };
             // Return the view

@@ -1,0 +1,66 @@
+﻿@model BlackMarketAuctionPart2.ViewModels.ShoppingCartViewModel
+@{
+    ViewBag.Title = "Shopping Cart";
+}
+
+<!--
+     index.cshtml
+     Austin Cameron - Patrick Ross - Ryan Jameson
+     Black Market Auction House
+     This is the index page for the shopping cart in the Black Market Auction House
+-->
+
+<h3>
+    <em>Review</em> your cart:
+</h3>
+<p class="button">
+    @Html.ActionLink("Checkout >> ", "AddressAndPayment", "Checkout")
+</p>
+<div id="update-message">
+</div>
+<table>
+    <tr>
+        <th>
+            Item Name
+        </th>
+        <th>
+            Price (each)
+        </th>
+        <th>
+            Quantity
+        </th>
+        <th></th>
+    </tr>
+    @foreach (var item in Model.OrderItemList)
+    {
+        <tr id="row-@item.RecordID">
+            <td>
+                @Html.ActionLink(item.Item.Name, "Details",
+               "Store", new { id = item.ItemID }, null)
+            </td>
+            <td>
+                @item.Item.Price
+            </td>
+            <td id="item-count-@item.RecordID">
+                @item.Count
+            </td>
+            <td>
+                <a href="#" class="RemoveLink"
+                   data-id="@item.RecordID">
+                    Remove
+                    from cart
+                </a>
+            </td>
+        </tr>
+    }
+    <tr>
+        <td>
+            Total
+        </td>
+        <td></td>
+        <td></td>
+        <td id="cart-total">
+            @Model.CartTotal
+        </td>
+    </tr>
+</table>

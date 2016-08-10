@@ -8,8 +8,6 @@
          This is the detailed view for an item on the auction list
     -->
 
-
-
 @{
     ViewBag.Title = "Details";
 }
@@ -25,7 +23,9 @@
             <h3>@Model.Description</h3>
             <h4><a href="@Model.ItemLink">Wowhead Link</a></h4>
             <h3>$@Model.Price</h3>
-            <a href="@Url.Action("Browse", new { categories = Model.Category.Name })" class="btn btn-primary" title="Back"><i class="fa fa-chevron-left"> Back</i></a><a href="" class="btn btn-primary" title="Purchase"><i class="fa fa-shopping-cart"> Add to Cart</i></a>
+            <a href="@Url.Action("Browse", new { categories = Model.Category.Name })" class="btn btn-primary" title="Back"><i class="fa fa-chevron-left"> Back</i></a>
+            <a href="@Url.Action("addToCart", "ShoppingCart", new { id = Model.ItemID })" class="btn btn-primary" title="Purchase"><i class="fa fa-shopping-cart"> Add to Cart</i></a>
+            <a href="" class="btn btn-primary" title="Purchase"><i class="fa fa-shopping-cart"> Add to Cart</i></a>
         </div>
     </div>
 </div>

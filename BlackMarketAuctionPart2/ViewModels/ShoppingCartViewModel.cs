@@ -15,7 +15,7 @@ namespace BlackMarketAuctionPart2.ViewModels
 {
     public class ShoppingCartViewModel
     {
-        public virtual List<OrderItem> OrderItems { get; set; }
+        public virtual List<OrderItem> OrderItemList { get; set; }
         public virtual decimal CartTotal { get; set; }
     }
 }
