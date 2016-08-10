@@ -4,6 +4,14 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
+/*
+     HomeController.cs
+     Austin Cameron - Patrick Ross - Ryan Jameson
+     Black Market Auction House
+     This is the Home controller
+
+*/
+
 namespace BlackMarketAuctionPart2.Controllers
 {
     public class HomeController : Controller

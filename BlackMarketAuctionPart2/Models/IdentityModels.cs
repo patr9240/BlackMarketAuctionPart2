@@ -4,6 +4,13 @@ using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 
+/*
+     IdentityModels.cs
+     Austin Cameron - Patrick Ross - Ryan Jameson
+     Black Market Auction House
+     This is the identity model for the website
+*/
+
 namespace BlackMarketAuctionPart2.Models
 {
     // You can add profile data for the user by adding more properties to your ApplicationUser class, please visit http://go.microsoft.com/fwlink/?LinkID=317594 to learn more.

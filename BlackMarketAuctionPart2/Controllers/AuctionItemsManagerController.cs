@@ -9,6 +9,14 @@ using System.Web;
 using System.Web.Mvc;
 using BlackMarketAuctionPart2.Models;
 
+/*
+     AuctionItemsManagerController.cs
+     Austin Cameron - Patrick Ross - Ryan Jameson
+     Black Market Auction House
+     This is the auction items manager controller
+
+*/
+
 namespace BlackMarketAuctionPart2.Controllers
 {
     [Authorize(Users ="admin@example.com")]

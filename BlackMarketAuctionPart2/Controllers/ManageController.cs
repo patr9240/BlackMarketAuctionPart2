@@ -8,6 +8,13 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using BlackMarketAuctionPart2.Models;
 
+/*
+     ManagerController.cs
+     Austin Cameron - Patrick Ross - Ryan Jameson
+     Black Market Auction House
+     This is the account manager controller
+
+*/
 namespace BlackMarketAuctionPart2.Controllers
 {
     [Authorize]

@@ -3,6 +3,13 @@ using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNet.Identity;
 using Microsoft.Owin.Security;
 
+/*
+     ManageViewModels.cs
+     Austin Cameron - Patrick Ross - Ryan Jameson
+     Black Market Auction House
+     This is the account managment view model for the website
+*/
+
 namespace BlackMarketAuctionPart2.Models
 {
     public class IndexViewModel

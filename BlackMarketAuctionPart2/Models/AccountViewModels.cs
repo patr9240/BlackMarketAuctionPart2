@@ -1,6 +1,13 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
+/*
+     AccountViewModels.cs
+     Austin Cameron - Patrick Ross - Ryan Jameson
+     Black Market Auction House
+     This is the account view model for the website
+*/
+
 namespace BlackMarketAuctionPart2.Models
 {
     public class LoginViewModel
