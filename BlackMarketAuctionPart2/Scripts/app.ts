@@ -20,9 +20,9 @@
                     // Successful requests get here
                     // Update the page elements
                     if (data.ItemCount == 0) {
-                        $('#row-' + data.DeleteId).fadeOut('slow');
+                        $('#row-' + data.DeleteID).fadeOut('slow');
                     } else {
-                        $('#item-count-' + data.DeleteId).text(data.ItemCount);
+                        $('#item-count-' + data.DeleteID).text(data.ItemCount);
                     }
                     $('#cart-total').text(data.CartTotal);
                     cartValue = data.cartTotal;
