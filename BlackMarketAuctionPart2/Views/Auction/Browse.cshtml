@@ -31,11 +31,15 @@ else
         <div class="col-sm-3 col-md-4">
             <div class="thumbnail">
                 <img src="@item.ItemImage" alt="@item.Name" width="256" height="256">
-                <div class="caption">
-                    <h3>@item.Name</h3>
-                    <p>@item.Category.Name</p>
-                    <p>$@item.Price</p>
-                    <p><a href="@Url.Action("Details", new { id = item.ItemID })" class="btn btn-primary" title="View Category">View Item</a></p><a href="@Url.Action("Index")" class="btn btn-primary" title="Back"><i class="fa fa-chevron-right"> Back</i></a>
+                    <div class="caption">
+                        <div class="color1">
+                        <h3>@item.Name</h3>
+                        <p>@item.Category.Name</p>
+                        <p>$@item.Price</p>
+                            </div>
+                        <div class="Button--ghost">
+                            <p><a href="@Url.Action("Details", new { id = item.ItemID })" class="Button" title="View Category">View Item</a></p><a href="@Url.Action("Index")" class="Button" title="Back"><i class="fa fa-chevron-left"> Back</i></a>
+                        </div>
                 </div>
             </div>
         </div>

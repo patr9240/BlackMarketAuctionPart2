@@ -22,6 +22,18 @@ body {
 	margin: 50px 40px 0px 160px;
     height: 1000px;
 }
+.navbar{
+    height: 44px;
+    padding: 0;
+    margin-left: 0;
+    box-shadow: none;
+    position: relative;
+    max-width: 1600px;
+    margin: 0 auto;
+    background: 0 0;
+    background-color: #211510;
+    color: #fff;
+}
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
@@ -61,8 +73,47 @@ textarea {
     position: relative;
     padding-left: 20em;
     padding-top: 5em;
+
     
 }
 .itemcat1{
     padding-left: 25em;
+}
+.thumbnail{
+    background-color: #211510;
+    font-style:italic;
+    color: #FFA500;
+}
+.color1{
+  font-style:italic;
+    color: #f7b10a;
+      font-weight: 700;
+}
+.Button {
+    font-size: 13.5px;
+    font-weight: 700;
+    line-height: 22.5px;
+    background-image: -webkit-linear-gradient(top,#211510,#211510);
+    background-image: linear-gradient(to bottom,#211510,#211510);
+    border: 0;
+    color: #f7b10a;
+    cursor: pointer;
+    display: inline-block;
+    padding: 1px;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 1px 1px 0 #211510,1px 1px 0 #211510;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.Button--ghost {
+    border: 1px solid #211510;
+    color: #f7b10a;
+    min-width: 180px;
+    padding: 0;
+    text-shadow: none;
+    -webkit-transition: background .2s,color .2s;
+    transition: background .2s,color .2s;
 }
