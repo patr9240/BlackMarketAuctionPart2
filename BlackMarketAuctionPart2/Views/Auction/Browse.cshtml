@@ -23,25 +23,27 @@ else
 @{
     ViewBag.Title = "Browse";
 }
-
-<h2>Browsing Category: @Model.Name</h2>
-@foreach (Item item in Model.items)
-{
-    <div class="thumb1">
-        <div class="col-sm-3 col-md-4">
-            <div class="thumbnail">
-                <img src="@item.ItemImage" alt="@item.Name" width="256" height="256">
+<div>
+    <h2>Browsing Category: @Model.Name</h2>
+    @foreach (Item item in Model.items)
+    {
+        <div class="thumb1">
+            <div class="col-sm-3 col-md-4">
+                <div class="thumbnail">
+                    <img src="@item.ItemImage" alt="@item.Name" width="256" height="256">
                     <div class="caption">
                         <div class="color1">
-                        <h3>@item.Name</h3>
-                        <p>@item.Category.Name</p>
-                        <p>$@item.Price</p>
-                            </div>
-                        <div class="Button--ghost">
-                            <p><a href="@Url.Action("Details", new { id = item.ItemID })" class="Button" title="View Category">View Item</a></p><a href="@Url.Action("Index")" class="Button" title="Back"><i class="fa fa-chevron-left"> Back</i></a>
+                            <h3>@item.Name</h3>
+                            <p>@item.Category.Name</p>
+                            <p>$@item.Price</p>
                         </div>
+                        <div class="Button--ghost">
+                            <a href="@Url.Action("Index")" class="Button" title="Back"><i class="fa fa-chevron-left"> Back</i></a>
+                            <a href="@Url.Action("Details", new { id = item.ItemID })" class="Button" title="View Category">View Item</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-}
+    }
+</div>
